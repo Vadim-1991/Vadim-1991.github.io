@@ -1,0 +1,91 @@
+@media screen  and (max-width: 1250px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 775px) {
+
+    .skills_block {
+        flex-direction: column;
+    }
+
+    .skills_block_item:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    .skills_block_item:nth-child(3) {
+        margin-top: 80px;
+    }
+
+    .skills_block_item:nth-child(4) {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 475px) {
+
+    .image-slider .swiper-button-prev::after,
+    .image-slider .swiper-button-next::after {
+        font-size: 25px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: var(--swiper-navigation-top-offset, 58%);
+    }
+
+    .designer_block_about_me {
+        margin-top: 23px;
+    }
+
+    .designer_block_ru_eng button {
+        display: none;
+    }
+
+    .designer_block {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 460px) {
+    .menu {
+        display: none;
+    }
+
+    .designer {
+        padding: 10px 0 104px 0;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        display: none;
+    }
+
+    .block_about_me_description_one {
+        font-size: 19px;
+    }
+
+    .block_about_me_description_two {
+        font-size: 19px;
+    }
+
+    .block_about_me_description_three {
+        font-size: 20px;
+    }
+
+    .skills_subtitle {
+        margin-top: 50px;
+        font-size: 15px;
+
+    }
+
+    .contacts_btn button {
+        width: 316px;
+    }
+
+    .burger{
+        display: block;
+    }
+}
