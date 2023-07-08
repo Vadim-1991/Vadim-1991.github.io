@@ -1,91 +1,60 @@
-@media screen  and (max-width: 1250px) {
-    .container {
-        padding-left: 30px;
-        padding-right: 30px;
+@media (max-width: 1350px) {
+    .container{
+        padding: 0 25px;
+    }
+    .services-block {
+        grid-template-columns: repeat(2, 1fr)
     }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 1300px){
 
-    .skills_block {
-        flex-direction: column;
+    .lawyers-block{
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        &-item{
+            scroll-snap-align: center;
+            scroll-snap-align: start; 
+            flex: 0 0 auto;
+        }
     }
 
-    .skills_block_item:nth-child(2) {
-        margin-top: 80px;
+    .rewievs-block{
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        &-item{
+scroll-snap-align: center;
+            scroll-snap-align: start; 
+            flex: 0 0 auto;
+        }
     }
 
-    .skills_block_item:nth-child(3) {
-        margin-top: 80px;
-    }
-
-    .skills_block_item:nth-child(4) {
-        margin-top: 80px;
-    }
-}
-
-@media (max-width: 475px) {
-
-    .image-slider .swiper-button-prev::after,
-    .image-slider .swiper-button-next::after {
-        font-size: 25px;
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-        top: var(--swiper-navigation-top-offset, 58%);
-    }
-
-    .designer_block_about_me {
-        margin-top: 23px;
-    }
-
-    .designer_block_ru_eng button {
-        display: none;
-    }
-
-    .designer_block {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
+    .materials-block{
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        &-item{
+            scroll-snap-align: center;
+            scroll-snap-align: start; 
+            flex: 0 0 auto;
+        }
     }
 }
 
-@media (max-width: 460px) {
-    .menu {
+@media (max-width: 1150px) {
+    .company-img{
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .menu{
         display: none;
     }
 
-    .designer {
-        padding: 10px 0 104px 0;
-    }
-
-    .swiper-backface-hidden .swiper-slide {
-        display: none;
-    }
-
-    .block_about_me_description_one {
-        font-size: 19px;
-    }
-
-    .block_about_me_description_two {
-        font-size: 19px;
-    }
-
-    .block_about_me_description_three {
-        font-size: 20px;
-    }
-
-    .skills_subtitle {
-        margin-top: 50px;
-        font-size: 15px;
-
-    }
-
-    .contacts_btn button {
-        width: 316px;
-    }
-
-    .burger{
+    .logo-mobile-menu{
         display: block;
     }
 }
